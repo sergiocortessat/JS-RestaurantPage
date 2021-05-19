@@ -86,8 +86,7 @@ content.appendChild(navBar);
 content.appendChild(home);
 cardWrapper.appendChild(card1);
 cardWrapper.appendChild(card2);
-content.parentElement.appendChild(footer);
-
+content.appendChild(footer);
 // NAVBAR TOOGLE PAGES
 const toogle = document.querySelectorAll('.nav-link');
 toogle.forEach((button) => {
@@ -97,16 +96,19 @@ toogle.forEach((button) => {
       about.classList.add('d-none');
       home.classList.add('d-none');
       content.appendChild(cardWrapper);
+      content.appendChild(footer);
     } else if (e.target.textContent === 'HOME') {
       home.classList.remove('d-none');
       about.classList.add('d-none');
       cardWrapper.classList.add('d-none');
       content.appendChild(home);
+      content.appendChild(footer);
     } else if (e.target.textContent === 'CONTACT') {
       cardWrapper.classList.add('d-none');
       home.classList.add('d-none');
       about.classList.remove('d-none');
       content.appendChild(about);
+      content.appendChild(footer);
     }
   });
 });
