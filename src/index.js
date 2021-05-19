@@ -1,7 +1,7 @@
 import './style.css';
 import backGround from './images/background.jpg';
 
-// header
+// NAVBAR
 const navBar = document.createElement('nav');
 navBar.classList.add('navbar-light', 'navbar-style', 'd-flex', 'justify-content-center');
 navBar.innerHTML = `
@@ -16,9 +16,11 @@ navBar.innerHTML = `
 const cardWrapper = document.createElement('div');
 const card1 = document.createElement('div');
 const card2 = document.createElement('div');
+
 cardWrapper.classList.add('card-wrapper');
 card1.classList.add('card', 'card1');
 card2.classList.add('card', 'card2');
+
 card1.innerHTML = `
 <div class="card-group">
 <div class="card">
@@ -59,27 +61,52 @@ card2.innerHTML = `
             </div>
           </div>`;
 
-// content
-// const backgroundImage = new Image();
-// backgroundImage.src = backGround;
-// backgroundImage.class = 'background-image';
-// backgroundImage.classList.add('background-image');
-
-
 // HOME
 
 const home = document.createElement('div');
 home.classList.add('home');
 
+// ABOUT
+const about = document.createElement('div');
+about.classList.add('about');
 
+// FOOTER
 
+const footer = document.createElement('footer');
+footer.classList.add('footer');
+footer.innerHTML = `
+<div class="text-center">
+  <span class="">&copy; Sergio Cortes 2021</span>
+</div>`;
 
+// APPEND CHILDS
 const content = document.querySelector('.content');
 content.classList.add('background-image');
 content.appendChild(navBar);
 content.appendChild(home);
-//cardWrapper.appendChild(card1);
-//cardWrapper.appendChild(card2);
-//content.appendChild(cardWrapper);
+cardWrapper.appendChild(card1);
+cardWrapper.appendChild(card2);
+content.parentElement.appendChild(footer);
 
-// footer
+// NAVBAR TOOGLE PAGES
+const toogle = document.querySelectorAll('.nav-link');
+toogle.forEach((button) => {
+  button.addEventListener('click', (e) => {
+    if (e.target.textContent === 'MENU') {
+      cardWrapper.classList.remove('d-none');
+      about.classList.add('d-none');
+      home.classList.add('d-none');
+      content.appendChild(cardWrapper);
+    } else if (e.target.textContent === 'HOME') {
+      home.classList.remove('d-none');
+      about.classList.add('d-none');
+      cardWrapper.classList.add('d-none');
+      content.appendChild(home);
+    } else if (e.target.textContent === 'CONTACT') {
+      cardWrapper.classList.add('d-none');
+      home.classList.add('d-none');
+      about.classList.remove('d-none');
+      content.appendChild(about);
+    }
+  });
+});
