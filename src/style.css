@@ -1,3 +1,41 @@
-.test {
-    color: red;
+.background-image {
+  min-height: 100vh;
+  background-image: url("./images/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.navbar-style {
+  width: 20%;
+  margin: auto;
+  background: #d6c99c;
+  opacity: 0.8;
+  border-radius: 20% 25%;
+}
+
+.card {
+  max-width: 45%;
+  margin: 0 auto;
+  background-color: transparent !important;
+  margin-bottom: 10px;
+}
+
+.card-body {
+  background-color: white;
+  opacity: 0.9;
+}
+
+.card-wrapper {
+  padding-top: 2%;
+}
+
+.home {
+  background-color: white;
+  min-height: 100px;
+  width: 750px;
+  margin: 50px auto;
+  opacity: 0.8;
+  border: solid 3px black;
+  border-radius: 2% 25%;
 }
