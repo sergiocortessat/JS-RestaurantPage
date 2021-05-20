@@ -23,11 +23,11 @@
 
 ### Built With
 
-* [JAVASCRIPT] [BOOTSTRAP] [WEBPACK]
+* [JAVASCRIPT] [BOOTSTRAP] [WEBPACK] [BABEL]
 
 ## Live Version
 
-* [Live Demo and Video]() 
+* [Live Demo and Video](https://sergiocortessat.github.io/JS-RestaurantPage/) 
 
 <!-- ABOUT THE PROJECT   -->
 ## About The Project
