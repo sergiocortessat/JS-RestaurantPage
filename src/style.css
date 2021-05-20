@@ -24,13 +24,12 @@
 }
 
 .card-body {
-  background-color: white;
+  background-color: #d6c99c;
   opacity: 0.9;
 }
 
 .card-wrapper {
   width: 70%;
-  
   margin: 0 auto;
   padding-bottom: 25px;
   padding-top: 20px;
@@ -89,8 +88,4 @@
 
 .nameDivPositioning {
   text-align: center;
-}
-
-.card-body {
-  background-color: #d6c99c !important;
 }
