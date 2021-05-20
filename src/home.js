@@ -7,7 +7,7 @@ const indexHome = () => {
   const infoDiv = document.createElement('div');
   infoDiv.classList.add('d-flex', 'flex-column', 'justify-content-center', 'menu');
   const nameDiv = document.createElement('div');
-  const nameInfo = document.createElement('h2');
+  const nameInfo = document.createElement('h3');
   nameDiv.classList.add('nameDivPositioning');
   nameInfo.textContent = 'SQUANCHY SUPER RESTAURANT WITH MULAN SZECHUAN SAUCE';
   nameDiv.appendChild(nameInfo);

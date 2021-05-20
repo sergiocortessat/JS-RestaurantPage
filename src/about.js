@@ -24,7 +24,7 @@ const aboutMe = () => {
             <span>Type your message...</span><br>
             <textarea class='form-control'  required></textarea>
           </div>
-          <input class='btn btn-dark my-3 mx-auto' type="submit" value="Send" />
+          <input class='btn btn-dark my-3 mx-auto' type="submit" value="Send" id = "btn" />
         </form>
       </div>
   </div>

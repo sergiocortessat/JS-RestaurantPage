@@ -5,6 +5,7 @@
   background-attachment: fixed;
   display: flex;
   flex-direction: column;
+  object-fit: cover;
 }
 
 .navbar-style {
@@ -19,6 +20,7 @@
   max-width: 45%;
   margin: 0 auto;
   background-color: transparent !important;
+  font-size: 0.75vw;
 }
 
 .card-body {
@@ -27,7 +29,15 @@
 }
 
 .card-wrapper {
+  width: 70%;
+  
+  margin: 0 auto;
   padding-bottom: 25px;
+  padding-top: 20px;
+}
+
+.card-img-top {
+  height: 200px;
 }
 
 .home {
@@ -79,4 +89,8 @@
 
 .nameDivPositioning {
   text-align: center;
+}
+
+.card-body {
+  background-color: #d6c99c !important;
 }

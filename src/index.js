@@ -18,9 +18,6 @@ content.appendChild(navBar());
 content.appendChild(home);
 content.appendChild(footer);
 
-const potato = document.createElement("p");
-potato.textContent = "yes";
-hello.appendChild(potato);
 // NAVBAR TOOGLE PAGES
 
 const toogle = document.querySelectorAll('.nav-link');
@@ -47,3 +44,5 @@ toogle.forEach((button) => {
     }
   });
 });
+
+console.log(document.getElementById('btn'));
