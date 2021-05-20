@@ -1,3 +1,4 @@
+
 import './style.css';
 import './images/background.jpg';
 import navBar from './header';

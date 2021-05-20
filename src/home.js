@@ -8,13 +8,13 @@ const indexHome = () => {
   infoDiv.classList.add('d-flex', 'flex-column', 'justify-content-center', 'menu');
   const nameDiv = document.createElement('div');
   const nameInfo = document.createElement('h3');
-  nameDiv.classList.add('nameDivPositioning');
+  nameDiv.classList.add('nameDivPositioning', 'hvr-pulse');
   nameInfo.textContent = 'SQUANCHY SUPER RESTAURANT WITH MULAN SZECHUAN SAUCE';
   nameDiv.appendChild(nameInfo);
   infoDiv.appendChild(nameDiv);
 
   const detailsDiv = document.createElement('div');
-  detailsDiv.classList.add('d-flex', 'justify-content-evenly', 'mt-5');
+  detailsDiv.classList.add('d-flex', 'justify-content-evenly', 'mt-5', "hours");
   const hoursDiv = document.createElement('div');
   const mainHoursHeader = document.createElement('h3');
   mainHoursHeader.innerHTML = 'Hours';
