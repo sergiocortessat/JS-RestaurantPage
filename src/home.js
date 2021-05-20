@@ -5,7 +5,16 @@ const indexHome = () => {
   home.classList.add('home');
 
   const infoDiv = document.createElement('div');
-  infoDiv.classList.add('d-flex', 'justify-content-evenly', 'mt-5', "menu");
+  infoDiv.classList.add('d-flex', 'flex-column', 'justify-content-center', 'menu');
+  const nameDiv = document.createElement('div');
+  const nameInfo = document.createElement('h2');
+  nameDiv.classList.add('nameDivPositioning');
+  nameInfo.textContent = 'SQUANCHY SUPER RESTAURANT WITH MULAN SZECHUAN SAUCE';
+  nameDiv.appendChild(nameInfo);
+  infoDiv.appendChild(nameDiv);
+
+  const detailsDiv = document.createElement('div');
+  detailsDiv.classList.add('d-flex', 'justify-content-evenly', 'mt-5');
   const hoursDiv = document.createElement('div');
   const mainHoursHeader = document.createElement('h3');
   mainHoursHeader.innerHTML = 'Hours';
@@ -27,7 +36,9 @@ const indexHome = () => {
   const mainLocation = document.createElement('p');
   mainLocation.innerHTML = 'Just Somewhere Nice.';
   locationDiv.appendChild(mainLocation);
-  infoDiv.append(hoursDiv, locationDiv);
+  detailsDiv.appendChild(hoursDiv);
+  detailsDiv.appendChild(locationDiv);
+  infoDiv.append(detailsDiv);
   home.appendChild(infoDiv);
 
   return home;

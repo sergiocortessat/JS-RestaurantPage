@@ -74,5 +74,9 @@
 .menu {
   position: relative;
   right: 10px;
-  top: 25%;
+  top: 15%;
+}
+
+.nameDivPositioning {
+  text-align: center;
 }
