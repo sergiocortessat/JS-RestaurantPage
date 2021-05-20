@@ -66,7 +66,7 @@ import indexHome from './home';
 //             </div>
 //           </div>`;
 
-// // HOME
+// HOME
 
 // const home = document.createElement('div');
 // home.classList.add('home');

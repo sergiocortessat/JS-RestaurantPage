@@ -27,12 +27,12 @@
 }
 
 .card-wrapper {
-  padding-top: 10px;
+  padding-bottom: 25px;
 }
 
 .home {
   background-color: #d6c99c;
-  height: 70vh;
+  height: 100%;
   margin: 50px auto;
   opacity: 0.8;
   border: solid 3px black;
@@ -64,4 +64,15 @@
   border-radius: 25% 2%;
   max-width: 750px;
   width: 90%;
+  height: 100vh;
+}
+
+.form {
+  margin-top: 10%;
+}
+
+.menu {
+  position: relative;
+  right: 10px;
+  top: 25%;
 }

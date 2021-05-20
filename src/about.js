@@ -9,7 +9,7 @@ const aboutMe = () => {
       <p class='my-4'>Phone: +964 770 8272458</p>
       <a href="mailto:sergiocortessat@gmail.com" class='my-2 text-decoration-none link-dark'>Email: sergiocortessat@gmail.com</a>
     </div>
-    <div class="mx-auto my-5">
+    <div class="mx-auto form">
         <form onsubmit="return false">
           <h3><i class=""></i>Contact us</h3>
           <div class="">
