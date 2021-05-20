@@ -14,7 +14,7 @@ const indexHome = () => {
   infoDiv.appendChild(nameDiv);
 
   const detailsDiv = document.createElement('div');
-  detailsDiv.classList.add('d-flex', 'justify-content-evenly', 'mt-5', "hours");
+  detailsDiv.classList.add('d-flex', 'justify-content-evenly', 'mt-5', 'hours');
   const hoursDiv = document.createElement('div');
   const mainHoursHeader = document.createElement('h3');
   mainHoursHeader.innerHTML = 'Hours';
