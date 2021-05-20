@@ -4,6 +4,7 @@ import navBar from './header';
 import footerFun from './footer';
 import wrapper from './menu';
 import aboutMe from './about';
+import indexHome from './home';
 
 // NAVBAR
 // const navBar = document.createElement('nav');
@@ -65,10 +66,10 @@ import aboutMe from './about';
 //             </div>
 //           </div>`;
 
-// HOME
+// // HOME
 
-const home = document.createElement('div');
-home.classList.add('home');
+// const home = document.createElement('div');
+// home.classList.add('home');
 
 // // ABOUT
 // const about = document.createElement('div');
@@ -88,6 +89,8 @@ const footer = footerFun();
 const content = document.querySelector('.content');
 const cardWrapper = wrapper();
 const about = aboutMe();
+const home = indexHome();
+
 content.classList.add('background-image');
 content.appendChild(navBar());
 content.appendChild(home);
