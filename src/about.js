@@ -10,7 +10,7 @@ const aboutMe = () => {
       <a href="mailto:sergiocortessat@gmail.com" class='my-2 text-decoration-none link-dark'>Email: sergiocortessat@gmail.com</a>
     </div>
     <div class="mx-auto form">
-        <form onsubmit="return false">
+        <form name = "contactme" onsubmit="return false">
           <h3><i class=""></i>Contact us</h3>
           <div class="">
             <span>Name</span><br>

@@ -1,5 +1,5 @@
 import './style.css';
-import backGround from './images/background.jpg';
+import './images/background.jpg';
 import navBar from './header';
 import footerFun from './footer';
 import wrapper from './menu';
@@ -17,6 +17,10 @@ content.classList.add('background-image');
 content.appendChild(navBar());
 content.appendChild(home);
 content.appendChild(footer);
+
+const btn = () => {
+  document.contactme.reset();
+};
 
 // NAVBAR TOOGLE PAGES
 
@@ -40,9 +44,8 @@ toogle.forEach((button) => {
       home.classList.add('d-none');
       about.classList.remove('d-none');
       content.appendChild(about);
+      document.querySelector('#btn').addEventListener('click', btn);
       content.appendChild(footer);
     }
   });
 });
-
-console.log(document.getElementById('btn'));
