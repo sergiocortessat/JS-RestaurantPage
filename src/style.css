@@ -58,12 +58,10 @@
 
 .about {
   background-color: #d6c99c;
-  height: 70vh;
   margin: 50px auto;
-  opacity: 0.8;
+  opacity: 0.9;
   border: solid 3px black;
   border-radius: 25% 2%;
   max-width: 750px;
-  min-width: 10%;
   width: 90%;
 }
