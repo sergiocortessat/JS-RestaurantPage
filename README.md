@@ -27,7 +27,7 @@
 
 ## Live Version
 
-* [Live Demo and Video](https://sergiocortessat.github.io/JS-RestaurantPage/) 
+* [Live Demo and Video](https://sergiocortessat.github.io/JS-RestaurantPage) 
 
 <!-- ABOUT THE PROJECT   -->
 ## About The Project
