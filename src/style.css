@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+
+body {
+  font-family: "Bangers", sans-serif;
+}
+
+.background-image {
+  height: 100vh;
+  background-image: url("./images/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  object-fit: cover;
+}
+
+.navbar-style {
+  width: 20%;
+  margin: 0 auto auto auto;
+  background: #d6c99c;
+  opacity: 0.8;
+  border-radius: 20% 25%;
+  font-size: 1rem;
+}
+
+.card {
+  max-width: 45%;
+  margin: 0 auto;
+  background-color: transparent !important;
+  font-size: 0.75vw;
+}
+
+.card-body {
+  background-color: #d6c99c;
+  opacity: 0.9;
+}
+
+.card-wrapper {
+  width: 70%;
+  margin: 0 auto;
+  padding-bottom: 25px;
+  padding-top: 20px;
+}
+
+.card-img-top {
+  height: 200px;
+}
+
+.home {
+  background-color: #d6c99c;
+  height: 100%;
+  margin: 50px auto;
+  opacity: 0.8;
+  border: solid 3px black;
+  border-radius: 2% 25%;
+  max-width: 750px;
+  min-width: 10%;
+  width: 90%;
+}
+
+.footer {
+  margin: 0 auto;
+  width: 100%;
+  background: #d6c99c;
+  opacity: 0.9;
+  bottom: 0;
+}
+
+.footer > div {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.about {
+  background-color: #d6c99c;
+  margin: 50px auto;
+  opacity: 0.9;
+  border: solid 3px black;
+  border-radius: 25% 2%;
+  max-width: 750px;
+  width: 90%;
+  height: 100vh;
+}
+
+.form {
+  margin-top: 10%;
+}
+
+.menu {
+  position: relative;
+  right: 10px;
+  top: 15%;
+}
+
+.nameDivPositioning {
+  text-align: center;
+}
+
+.nav-link {
+  font-size: 1.5rem;
+}
+
+.hours {
+  font-size: 1.3rem;
+}
+
+/* Pulse */
+@-webkit-keyframes hvr-pulse {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+@keyframes hvr-pulse {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+.hvr-pulse {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.hvr-pulse:hover,
+.hvr-pulse:focus,
+.hvr-pulse:active {
+  -webkit-animation-name: hvr-pulse;
+  animation-name: hvr-pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  font-weight: bold;
+}
