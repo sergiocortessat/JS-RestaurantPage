@@ -13,16 +13,3 @@ const navBar = () => {
 };
 
 export default navBar;
-
-// function Object(name, lastName) {
-//   this.name = name;
-//   this.lastName = lastName;
-// }
-
-// Object.prototype.species = 'human';
-
-// const x = new Object('sergio', 'cortes');
-// console.log(x.name);
-
-// const y = new Object('donat', "uwahamoro");
-// console.log(y.name);
