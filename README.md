@@ -31,7 +31,7 @@
 
 <!-- ABOUT THE PROJECT   -->
 ## About The Project
-The Restaurant project pages displays the main menu page of the restaurant with short description. This page is composed as a one-page webapp. The page uses webpack to bundle the scripts
+The Restaurant project pages display the main menu page of the restaurant with a short description. This page is composed of a one-page web app. The page uses webpack to bundle the scripts
 
 
 ## Screenshot Test
